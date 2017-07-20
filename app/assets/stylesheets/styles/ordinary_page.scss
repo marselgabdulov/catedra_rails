@@ -1,0 +1,139 @@
+.ordinary-page {
+  margin: 0 10em;
+  background:pink;
+
+  p {
+    text-align: justify;
+  }
+
+  .align-right {
+    display: flex;
+    flex-direction: raw;
+    justify-content: flex-end;
+  }
+
+  .image-header {
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .back-forvard-links {
+    text-align:center;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .page-divider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .image-wrapper {
+    text-align: justify;
+    width: 40%;
+    float: left;
+    height:auto;
+    margin: 0 20px 20px 0;
+
+    .img {
+      display: block;
+    }
+  }
+
+  .image-wrapper-right {
+    text-align: justify;
+    width: 40%;
+    float: right;
+    height:auto;
+    margin: 0 0 20px 20px;
+
+    .img {
+      display: block;
+    }
+  }
+
+  .vertical-img{
+    float: left;
+    width: 40%;
+    height:auto;
+    margin: 0 20px 20px 0;
+  }
+
+  .vertical-img-right {
+    float: right;
+    width: 40%;
+    height:auto;
+    margin: 0 0 20px 20px;
+  }
+
+
+  .horisontal-img {
+    float: right;
+    width: 50%;
+    height: auto;
+    margin: 0 0 20px 20px;
+  }
+
+  .horisontal-img-left {
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 0 20px 20px 0;
+  }
+
+  .sign {
+    font-size: 0.7em;
+  }
+
+  .header-message {
+    text-align: right;
+  }
+
+  .text-wrapper {
+    text-align: justify;
+    text-indent: 2em;
+  }
+
+  #header-image {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ordinary-page {
+    margin: 0 0.5em;
+    .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .page-devider {
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen
+  and (min-width : 800px)
+  and (max-width : 919px) {
+  .ordinary-page {
+    margin: 0 4em;
+  }
+}
+
+@media only screen
+and (min-width : 1700px) {
+  .ordinary-page {
+    margin: 0 5em;
+  }
+}
