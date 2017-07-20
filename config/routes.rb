@@ -8,4 +8,7 @@ Rails.application.routes.draw do
   get 'schedule', to: 'pages#schedule'
   get 'enlightenment', to: 'pages#enlightenment'
   get 'calendar', to: 'pages#calendar'
+
+  resources :clerics
+  # get 'clerics', to: 'clerics#index', as: :clergy
 end
