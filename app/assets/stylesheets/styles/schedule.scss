@@ -1,0 +1,102 @@
+$main-color: #D0022B;
+
+  .header-message {
+    font-size: 1.4em;
+    text-align:center;
+    color: $main-color;
+  }
+
+  .add-info {
+    margin: 2em 5em;
+  }
+
+  .schedule {
+    width: 100%;
+    margin: auto;
+
+     h2, h3, h4 {
+      color: $main-color;
+      text-transform: uppercase;
+    }
+
+    th {
+      text-align: left;
+      padding: .5em 0em;
+      margin-bottom: 2.5em;
+    }
+
+    th h3, h4 {
+      border-bottom: 1px solid;
+    }
+
+    h3 {
+      font-weight: bold;
+    }
+
+    tbody td:first-child {
+      text-align: left;
+      padding: 0em;
+    }
+
+    tr td:first-child {
+      font-weight: bold;
+      width: 150px;
+    }
+
+    td {
+      border-bottom: 1px solid grey;
+    }
+  }
+
+@media only screen
+  and (max-width: 768px) {
+
+    .schedule {
+      width: 100%;
+      margin: auto auto 2em auto;
+      border-color: white;
+      font-size: 0.8em;
+
+      th {
+        text-align: left;
+        padding: 0;
+        margin-bottom: 0;
+      }
+
+      th h3, h4 {
+        color: $main-color;
+        border-bottom: 1px solid;
+      }
+
+      h3 {
+        font-size: 0.7em;
+        font-weight: bold;
+      }
+
+      tbody td {
+        border-bottom: 1px solid grey;
+      }
+
+      tbody td:first-child {
+        text-align: center;
+      }
+
+      tr td:first-child {
+        font-weight: bold;
+        width: 15%;
+      }
+
+      td {
+        padding: 0.5em;
+      }
+
+      td strong {
+        text-transform: uppercase;
+      }
+    }
+
+    .header-message h1 {
+      font-size: 0.55em;
+      color: $main-color;
+    }
+}

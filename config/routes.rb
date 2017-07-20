@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get 'rules', to: 'pages#rules'
+  get 'schedule', to: 'pages#schedule'
 end

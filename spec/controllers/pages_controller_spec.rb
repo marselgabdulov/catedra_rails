@@ -8,11 +8,15 @@ RSpec.describe PagesController, type: :controller do
     expect(response).to have_http_status(200)
   end
 
-
-
   it 'renders rules page' do
     get :rules
     expect(response).to render_template("rules")
+    expect(response).to have_http_status(200)
+  end
+
+  it 'renders schedule page' do
+    get :schedule
+    expect(response).to render_template("schedule")
     expect(response).to have_http_status(200)
   end
 
