@@ -20,4 +20,10 @@ RSpec.describe PagesController, type: :controller do
     expect(response).to have_http_status(200)
   end
 
+  it 'renders enlightenment page' do
+    get :enlightenment
+    expect(response).to render_template("enlightenment")
+    expect(response).to have_http_status(200)
+  end
+
 end

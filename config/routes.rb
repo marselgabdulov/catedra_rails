@@ -6,4 +6,5 @@ Rails.application.routes.draw do
 
   get 'rules', to: 'pages#rules'
   get 'schedule', to: 'pages#schedule'
+  get 'enlightenment', to: 'pages#enlightenment'
 end
