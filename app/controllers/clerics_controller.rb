@@ -25,7 +25,7 @@ class ClericsController < ApplicationController
   def update
     if current_user.admin?
       @cleric.update(cleric_params)
-      @cleric.errors.empty? ? (redirect_to @cleric)
+      redirect_to @cleric if @cleric.errors.empty?
     else
       render file: "#{Rails.root}/public/403.html", status: 403, layout:false
     end
