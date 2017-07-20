@@ -10,5 +10,4 @@ Rails.application.routes.draw do
   get 'calendar', to: 'pages#calendar'
 
   resources :clerics
-  # get 'clerics', to: 'clerics#index', as: :clergy
 end

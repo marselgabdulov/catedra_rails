@@ -1,0 +1,57 @@
+#clergy-page {
+  margin: 0 5em;
+  padding: 0 4em;
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+  }
+  
+  .cleric-cart {
+    display: block;
+    list-style: none;
+    width: 12em;
+    height: 24em;
+    flex-basis: 200px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+
+    img {
+      max-width: 100%;
+      margin: auto;
+      Transition: 0.3s;
+       border-radius: 10px;
+    }
+    .name {
+      font-size: 0.9em;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+    }
+    .position {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  .border-square {
+    border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  #clergy-page {
+    flex-direction: column;
+    margin: 0;
+    margin-top: 1%;
+    padding: 0;
+      h1 {
+        text-align: center;
+      }
+  }
+}

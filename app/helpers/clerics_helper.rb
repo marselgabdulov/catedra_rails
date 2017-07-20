@@ -1,0 +1,2 @@
+module ClericsHelper
+end

@@ -1,0 +1,10 @@
+<div class="cleric-cart">
+  <%= image_tag @cleric.image.normal %> <br>
+  <span class="position"><%= @cleric.position %></span><br>
+  <span class="name"><%= @cleric.name %></span><br>
+
+  <% if current_user.admin? %>
+    <%= link_to 'edit', edit_cleric_path(@cleric) %>
+       <%= link_to 'delete', cleric_path(@cleric), method: :delete, data: { confirm: 'Уверены?' } %>
+  <% end %>
+</div>

@@ -1,0 +1,6 @@
+<%= simple_form_for @cleric do |f| %>
+  <p>Имя: <br><%= f.input :name, label: false %></p>
+  <p>Должность: <br><%= f.input :position, label: false %></p>
+  <p><%= f.input :image, label: false %></p>
+  <%= f.submit "Create" %>
+<% end %>

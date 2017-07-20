@@ -1,0 +1,12 @@
+<div id="clergy-page">
+  <h1>Служители</h1>
+  <ul class="grid">
+    <% @clerics.each do |cleric| %>
+      <li class="cleric-cart">
+        <%= image_tag cleric.image.normal %>
+        <span class="position"><%= cleric.position %></span>
+        <span class="name"><%= cleric.name %></span>
+      </li>
+    <% end %>
+  </ul>
+</div>
