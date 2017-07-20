@@ -26,4 +26,10 @@ RSpec.describe PagesController, type: :controller do
     expect(response).to have_http_status(200)
   end
 
+  it 'renders calendar page' do
+    get :calendar
+    expect(response).to render_template("calendar")
+    expect(response).to have_http_status(200)
+  end
+
 end

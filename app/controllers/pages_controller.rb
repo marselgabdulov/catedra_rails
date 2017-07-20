@@ -10,4 +10,7 @@ class PagesController < ApplicationController
 
   def enlightenment
   end
+
+  def calendar
+  end
 end
