@@ -12,4 +12,17 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery3
+//= require jquery_ujs
 //= require_tree .
+
+  function toggleClass() {
+    $("#nav").toggleClass("hidden active");
+  }
+
+  function changeSrc() {
+    var src = ($(this).attr('src') === 'icons/menu-white.svg')
+      ? 'icons/cancel-white.svg'
+      : 'icons/menu-white.svg';
+    $(this).attr('src', src);
+  }
