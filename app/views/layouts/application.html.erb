@@ -7,12 +7,13 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+  <script src="https://use.fontawesome.com/0b7d5d47f3.js"></script>
 
   <body>
     <div id='header'>
-      <div id="menu" onclick="toggleClass()" >
-        <%= image_submit_tag("icons/menu-white.svg", class: "icons menu-button active", id: "burger", onclick:"changeSrc();" ) %>
-        <span></span>
+      <div id="menu" onclick="toggleClass();">
+        <!-- <%= image_submit_tag("icons/menu-white.svg", class: "icons menu-button active", id: "burger", onclick:"changeSrc();" ) %> -->
+        <span onclick="toggleClass();"><i class="fa fa-bars" aria-hidden="true" onclick="toggleClass();toggleIcon()" style="font-size:1.5em;color:white;padding-top:0.3em;"></i></span>
       </div>
 
       <header>
@@ -20,8 +21,8 @@
       </header>
     </div>
 
-    <div id='sidebar' onclick="toggleClass()" >
-        <nav role='navigation' id="nav" class="active" >
+    <div id='sidebar' onclick="toggleClass();toggleIcon()" >
+        <nav role='navigation' id="nav" class="hidden" >
           <div className="menu-block">
             <ul>
               <li>

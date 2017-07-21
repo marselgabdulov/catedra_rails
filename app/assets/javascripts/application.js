@@ -16,6 +16,11 @@
 //= require jquery_ujs
 //= require_tree .
 
+  function toggleIcon() {
+    console.log('works');
+    $("i").toggleClass("fa-bars fa-times");
+  }
+
   function toggleClass() {
     $("#nav").toggleClass("hidden active");
   }
