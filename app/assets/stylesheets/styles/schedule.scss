@@ -1,11 +1,5 @@
 $main-color: #D0022B;
 
-  .header-message {
-    font-size: 1.4em;
-    text-align:center;
-    color: $main-color;
-  }
-
   .add-info {
     margin: 2em 5em;
   }
@@ -93,10 +87,5 @@ $main-color: #D0022B;
       td strong {
         text-transform: uppercase;
       }
-    }
-
-    .header-message h1 {
-      font-size: 0.55em;
-      color: $main-color;
     }
 }
