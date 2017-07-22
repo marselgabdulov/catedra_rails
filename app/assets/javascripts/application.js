@@ -17,7 +17,6 @@
 //= require_tree .
 
   function toggleIcon() {
-    console.log('works');
     $("i").toggleClass("fa-bars fa-times");
   }
 

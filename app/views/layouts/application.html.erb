@@ -12,7 +12,6 @@
   <body>
     <div id='header'>
       <div id="menu" onclick="toggleClass();">
-        <!-- <%= image_submit_tag("icons/menu-white.svg", class: "icons menu-button active", id: "burger", onclick:"changeSrc();" ) %> -->
         <span onclick="toggleClass();"><i class="fa fa-bars" aria-hidden="true" onclick="toggleClass();toggleIcon()" style="font-size:1.5em;color:white;padding-top:0.3em;"></i></span>
       </div>
 
@@ -26,6 +25,7 @@
           <div className="menu-block">
             <ul>
               <li>
+                <% sleep(0.5) %>
                 <%= link_to "Расписание богослужений", schedule_path %>
               </li>
 
