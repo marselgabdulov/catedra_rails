@@ -1,0 +1,117 @@
+#contact-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 15%;
+  width: 75%;
+  height: auto;
+
+  .purple {
+    color: #b20a80;
+  }
+
+  .brown {
+    color: #bf613f;
+  }
+
+  .card-background {
+    width: 100%;
+    background-image: url("map.png");
+    height: auto;
+  }
+
+  .card {
+    font-family: Tahoma, sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+    width: 300px;
+    height: auto;
+    background-color: white;
+    opacity: 0.87;
+    margin: 14% 30% 20% 30%;
+    padding: 15px;
+
+    a {
+      font-weight: 900;
+    }
+
+  }
+
+  #main-contact {
+    width: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+     flex-direction: row;
+     justify-content: space-between;
+
+     .left {
+       width: 46%;
+       height: auto;
+     }
+
+     .right {
+       width: 46%;
+       height: auto;
+     }
+  }
+
+  @media only screen
+    and (max-width : 768px) {
+
+      margin: 0 0 0 0;
+      width: 100%;
+
+      .card-background {
+        background-image:none;
+      }
+
+      .card {
+        font-size: 1em;
+        text-align: left;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+      }
+
+    #main-contact {
+      width: 100%;
+      flex-direction: column;
+
+      .left, .right {
+        width: 100%;
+      }
+    }
+  }
+
+  @media only screen
+    and (min-width : 800px)
+    and (max-width : 919px) {
+
+      .card {
+        font-size: 1em;
+        width: 250px;
+        margin: 10% 10% 10% 25%;
+      }
+
+    .card-background {
+      background-image: url("map-sm.png");
+    }
+  }
+
+  @media only screen
+    and (min-width : 920px)
+    and (max-width : 1024px) {
+
+      .card {
+        font-size: 1em;
+        width: 300px;
+        margin: 10% 10% 10% 25%;
+      }
+
+    .card-background {
+      background-image: url("map-md.png");
+    }
+  }
+}

@@ -3,6 +3,7 @@
 @import "./styles/schedule.scss";
 @import "./styles/calendar.scss";
 @import "./styles/navigation.scss";
+@import "./styles/contacts/contacts.scss";
 
 $main-color: #D0022B;
 $link-color: #868986;
@@ -48,7 +49,7 @@ h2 {
 
 .content {
   min-height: 100%;
-  padding: 0em 5em 5em 5em;
+  margin: 0em 5em 5em 5em;
 
   h1 {
     text-align: center;
@@ -231,7 +232,7 @@ and (min-width : 1367px) {
 and (min-width : 1700px) {
 
   .content {
-    padding-top: 0em;
+    margin: 0 2em;
 
     .text-section {
       margin-bottom: 4em;

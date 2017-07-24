@@ -13,4 +13,7 @@ class PagesController < ApplicationController
 
   def calendar
   end
+
+  def contacts
+  end
 end
