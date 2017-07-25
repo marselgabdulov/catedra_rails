@@ -16,3 +16,10 @@ and (max-width : 768px) {
     margin: 0.5em;
   }
 }
+
+@media only screen
+and (min-width : 1700px) {
+  #calendar-page {
+    margin: 1em 0em;
+  }
+}
