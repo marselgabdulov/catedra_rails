@@ -2,6 +2,8 @@
 @import "./styles/schedule.scss";
 @import "./styles/calendar.scss";
 @import "./styles/navigation.scss";
+@import "./styles/header.scss";
+
 @import "./styles/contacts/contacts.scss";
 
 $main-color: #D0022B;
@@ -14,7 +16,7 @@ html, body {
   height: 100%;
   font-family: 'PT Serif', serif;
   font-size: 20px;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 button:hover {
@@ -32,23 +34,23 @@ h1 {
   text-transform: uppercase;
   // font-family: Tahoma, sans-serif;
   margin: 0;
-  font-size: 1.5em;
-  line-height: 1.2em;
+  font-size: 1.3em;
+  line-height: 1em;
   white-space: nowrap;
   color: $main-color;
 }
 
 h2 {
   text-align: center;
-  font-size: 1.4em;
-  line-height: 1.5em;
+  font-size: 1.2em;
+  line-height: 0.9em;
 }
 
 /*-----CONTENT----------*/
 
 .content {
   min-height: 100%;
-  margin: 0em 5em 5em 5em;
+  margin: 1em 10em;
 
   h1 {
     text-align: center;
@@ -89,8 +91,9 @@ h2 {
 //@media (min-width:1281px) {  }
 
 @media only screen and (max-width : 320px) {
+
   h1 {
-    font-size: 0.7em;
+    font-size: 0.85em;
   }
 
   h2 {
@@ -98,7 +101,7 @@ h2 {
   }
 
   p, ul {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   li {
@@ -107,7 +110,7 @@ h2 {
   }
 
   .content {
-    margin: 3.5em 0.5em  0.5em 0.5em;
+    margin: 3.5em 0.2em  0.2em 0.2em;
   }
 }
 
@@ -115,7 +118,7 @@ h2 {
 and (min-width : 321px)
 and (max-width : 414px) {
   h1 {
-    font-size: 1em;
+    font-size: .9em;
   }
   .content {
     margin: 3.5em 0em  0em 0em;
@@ -129,7 +132,7 @@ and (max-width : 768px) {
   .content {
     margin: 3em 0;
     h1 {
-      font-size: 1.2em;
+      font-size: 1.1em;
     }
     p {
       font-size: 0.8em;
@@ -164,8 +167,7 @@ and (min-width : 769px)
 and (max-width : 1024px) {
 
   .content {
-    min-height: 80vh;
-    margin-top: 0em;
+    margin: 0 9em;
 
     h1 {
       font-size: 1.2em;
@@ -176,7 +178,6 @@ and (max-width : 1024px) {
     }
 
     font-size: 0.8em;
-
   }
 }
 
@@ -201,10 +202,6 @@ and (max-width : 1366px) {
   h1 {
     font-size: 1.8em;
   }
-
-  // html, body {
-  //   font-size: 1.05em;
-  // }
 
   .content {
     padding-top: 0;
