@@ -15,7 +15,7 @@ html, body {
   height: 100%;
   font-family: 'PT Serif', serif;
   font-size: 20px;
-  line-height: 30px;
+  line-height: 1.5em;
 }
 
 button:hover {
@@ -90,7 +90,7 @@ h2 {
   }
 
   .content {
-    padding: 3.5em 0.5em  0.5em 0.5em;
+    margin: 3.5em 0.5em  0.5em 0.5em;
   }
 }
 
@@ -101,7 +101,7 @@ and (max-width : 414px) {
     font-size: 1em;
   }
   .content {
-    padding: 3.5em 0.5em  0.5em 0.5em;
+    margin: 3.5em 0.5em  0.5em 0.5em;
   }
 
 }
@@ -110,7 +110,6 @@ and (max-width : 414px) {
 and (min-width : 550px)
 and (max-width : 768px) {
   .content {
-    padding: 0;
     margin:4em 2em;
     h1 {
       font-size: 1.2em;
@@ -134,7 +133,7 @@ and (max-width : 768px) {
   }
 
   .content {
-    padding-top: 4em;
+    margin-top: 4.5em;
 
     .text-section {
       margin-bottom: 1em;
@@ -186,9 +185,9 @@ and (max-width : 1366px) {
     font-size: 1.8em;
   }
 
-  html, body {
-    font-size: 1.05em;
-  }
+  // html, body {
+  //   font-size: 1.05em;
+  // }
 
   .content {
     padding-top: 0;
