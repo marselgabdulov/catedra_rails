@@ -1,5 +1,4 @@
 @import "./styles/ordinary_page.scss";
-@import "./styles/home.scss";
 @import "./styles/schedule.scss";
 @import "./styles/calendar.scss";
 @import "./styles/navigation.scss";
@@ -71,6 +70,24 @@ h2 {
 
 /*-----MEDIA------------*/
 
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+//@media (min-width:320px)  {  }
+
+/* smartphones, Android phones, landscape iPhone */
+//@media (min-width:480px)  {  }
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+//@media (min-width:600px)  {  }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+//@media (min-width:801px)  {  }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+//@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+/* hi-res laptops and desktops */
+//@media (min-width:1281px) {  }
+
 @media only screen and (max-width : 320px) {
   h1 {
     font-size: 0.7em;
@@ -101,7 +118,7 @@ and (max-width : 414px) {
     font-size: 1em;
   }
   .content {
-    margin: 3.5em 0.5em  0.5em 0.5em;
+    margin: 3.5em 0em  0em 0em;
   }
 
 }
@@ -110,7 +127,7 @@ and (max-width : 414px) {
 and (min-width : 550px)
 and (max-width : 768px) {
   .content {
-    margin:4em 2em;
+    margin: 3em 0;
     h1 {
       font-size: 1.2em;
     }

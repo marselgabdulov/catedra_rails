@@ -102,9 +102,14 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+/* smartphones, portrait iPhone, portrait 480x320 phones (Android) landscape iPhone 5 */
+@media (max-width:568px)  {
   .ordinary-page {
-    margin: 0 0.5em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+
     .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
       width: 100%;
     }
@@ -113,26 +118,65 @@
       display: block;
       margin: 0 auto;
     }
-
-    .page-devider {
-      img {
-        width: 100%;
-      }
-    }
   }
 }
 
-@media only screen
-  and (min-width : 800px)
-  and (max-width : 919px) {
+@media (min-width:569px)  {
   .ordinary-page {
-    margin: 0 4em;
+    margin: 0 1em;
+    padding: 0;
   }
 }
 
-@media only screen
-and (min-width : 1700px) {
-  .ordinary-page {
-    margin: 0 0em;
-  }
-}
+/* smartphones, Android phones, landscape iPhone */
+// @media (min-width:480px)  {
+//
+//
+// }
+
+/* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+//@media (min-width:600px)  {  }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+//@media (min-width:801px)  {  }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+//@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+/* hi-res laptops and desktops */
+//@media (min-width:1281px) {  }
+
+// @media only screen and (max-width: 568px) {
+//   .ordinary-page {
+//     margin: 0 0.5em;
+//     .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
+//       width: 100%;
+//     }
+//
+//     img {
+//       display: block;
+//       margin: 0 auto;
+//     }
+//
+//     .page-devider {
+//       img {
+//         width: 100%;
+//       }
+//     }
+//   }
+// }
+
+// @media only screen
+//   and (min-width : 800px)
+//   and (max-width : 919px) {
+//   .ordinary-page {
+//     margin: 0 4em;
+//   }
+// }
+//
+// @media only screen
+// and (min-width : 1700px) {
+//   .ordinary-page {
+//     margin: 0 0em;
+//   }
+// }
