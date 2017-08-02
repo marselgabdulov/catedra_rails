@@ -1,0 +1,9 @@
+<div>
+  <span><%= @announcement.title %></span><br>
+  <span><%= @announcement.body %></span><br>
+
+  <% if current_user.admin? %>
+    <%= link_to 'edit', edit_announcement_path(@announcement) %>
+       <%= link_to 'delete', announcement_path(@announcement), method: :delete, data: { confirm: 'Уверены?' } %>
+  <% end %>
+</div>

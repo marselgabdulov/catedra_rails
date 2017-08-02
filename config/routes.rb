@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get 'contacts', to: 'pages#contacts'
 
   resources :clerics
+  resources :announcements, except: [:index]
 end

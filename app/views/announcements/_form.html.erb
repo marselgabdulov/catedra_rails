@@ -1,0 +1,5 @@
+<%= simple_form_for @announcement do |f| %>
+  <p>Заголовок: <br><%= f.input :title, label: false %></p>
+  <p>Новость: <br><%= f.input :body, label: false %></p>
+  <%= f.submit "Create" %>
+<% end %>
