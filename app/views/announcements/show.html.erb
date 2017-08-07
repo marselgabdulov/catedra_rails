@@ -1,8 +1,8 @@
 <div>
-  <span><%= @announcement.title %></span><br>
-  <span><%= @announcement.body %></span><br>
+  <h2 class="announcement-title"><%= @announcement.title.html_safe %></h2><br>
+  <span><%= @announcement.body.html_safe %></span><br>
 
-  <% if current_user.admin? %>
+  <% if current_user && current_user.admin? %>
     <%= link_to 'edit', edit_announcement_path(@announcement) %>
        <%= link_to 'delete', announcement_path(@announcement), method: :delete, data: { confirm: 'Уверены?' } %>
   <% end %>

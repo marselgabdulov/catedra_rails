@@ -1,5 +1,5 @@
 <%= simple_form_for @announcement do |f| %>
-  <p>Заголовок: <br><%= f.input :title, label: false %></p>
-  <p>Новость: <br><%= f.input :body, label: false %></p>
+  <p>Заголовок: <br><%= f.input :title, label: false, input_html: { style: 'width: 100%'} %></p>
+  <p>Новость: <br><%= f.cktext_area :body, label: false %></p>
   <%= f.submit "Create" %>
 <% end %>

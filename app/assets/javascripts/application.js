@@ -14,6 +14,7 @@
 //= require turbolinks
 //= require jquery3
 //= require jquery_ujs
+//= require ckeditor/init
 //= require_tree .
 
   function toggleIcon() {
