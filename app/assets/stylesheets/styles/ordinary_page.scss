@@ -1,4 +1,4 @@
-.ordinary-page {
+.regular-page {
 
   p {
     text-align: justify;
@@ -103,7 +103,7 @@
 
 /* smartphones, portrait iPhone, portrait 480x320 phones (Android) landscape iPhone 5 */
 @media (max-width:568px)  {
-  .ordinary-page {
+  .regular-page {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -121,7 +121,7 @@
 }
 
 @media (min-width:569px)  {
-  .ordinary-page {
+  .regular-page {
     margin: 0 1em;
     padding: 0;
   }
@@ -146,7 +146,7 @@
 //@media (min-width:1281px) {  }
 
 // @media only screen and (max-width: 568px) {
-//   .ordinary-page {
+//   .regular-page {
 //     margin: 0 0.5em;
 //     .image-wrapper, .vertical-img, .image-wrapper-right, .horisontal-img, .vertical-img-right, .horisontal-img-left {
 //       width: 100%;
@@ -168,14 +168,14 @@
 // @media only screen
 //   and (min-width : 800px)
 //   and (max-width : 919px) {
-//   .ordinary-page {
+//   .regular-page {
 //     margin: 0 4em;
 //   }
 // }
 //
 // @media only screen
 // and (min-width : 1700px) {
-//   .ordinary-page {
+//   .regular-page {
 //     margin: 0 0em;
 //   }
 // }
